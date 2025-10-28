@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "firstName": "Ярослав",
+      "lastName": "Орлов",
+      "email": "admin@coffeereview.ru",
+      "password": "$2y$10$hashpassword1",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2024-09-01T10:00:00"
+    },
+    {
+      "id": "u2",
+      "firstName": "Анна",
+      "lastName": "Петрова",
+      "email": "manager@coffeereview.ru",
+      "password": "$2y$10$hashpassword2",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2024-09-05T14:30:00"
+    },
+    {
+      "id": "u3",
+      "firstName": "Иван",
+      "lastName": "Иванов",
+      "email": "ivan@mail.ru",
+      "password": "$2y$10$hashpassword3",
+      "role": "client",
+      "status": "active",
+      "createdAt": "2024-09-10T09:15:00"
+    },
+    {
+      "id": "u4",
+      "firstName": "Мария",
+      "lastName": "Сидорова",
+      "email": "maria@gmail.com",
+      "password": "$2y$10$hashpassword4",
+      "role": "client",
+      "status": "active",
+      "createdAt": "2024-09-15T11:20:00"
+    },
+    {
+      "id": "u5",
+      "firstName": "Петр",
+      "lastName": "Васильев",
+      "email": "petr@yandex.ru",
+      "password": "$2y$10$hashpassword5",
+      "role": "client",
+      "status": "active",
+      "createdAt": "2024-09-20T16:45:00"
+    }
+  ]
+}

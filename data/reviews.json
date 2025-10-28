@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "id": "r1",
+      "userId": "u3",
+      "menuItemId": "m1",
+      "text": "Отличный эспрессо! Крепкий, насыщенный вкус. Бариста знает свое дело.",
+      "status": "approved",
+      "isAnonymous": false,
+      "createdAt": "2024-10-01T10:30:00"
+    },
+    {
+      "id": "r2",
+      "userId": "u4",
+      "menuItemId": "m3",
+      "text": "Капучино просто волшебный! Идеальная пенка, правильная температура. Обязательно вернусь!",
+      "status": "approved",
+      "isAnonymous": false,
+      "createdAt": "2024-10-02T14:20:00"
+    },
+    {
+      "id": "r3",
+      "userId": "u5",
+      "menuItemId": "m4",
+      "text": "Латте понравился, но хотелось бы чуть больше кофейного вкуса. В целом хорошо.",
+      "status": "approved",
+      "isAnonymous": false,
+      "createdAt": "2024-10-03T11:15:00"
+    },
+    {
+      "id": "r4",
+      "userId": "u3",
+      "menuItemId": "m5",
+      "text": "Раф кофе - мой любимый напиток! Здесь делают один из лучших в городе.",
+      "status": "approved",
+      "isAnonymous": false,
+      "createdAt": "2024-10-04T16:45:00"
+    },
+    {
+      "id": "r5",
+      "userId": "u4",
+      "menuItemId": "m6",
+      "text": "Чизкейк очень нежный, тает во рту. Отличное дополнение к кофе!",
+      "status": "approved",
+      "isAnonymous": false,
+      "createdAt": "2024-10-05T13:00:00"
+    },
+    {
+      "id": "r6",
+      "userId": "u5",
+      "menuItemId": null,
+      "text": "Прекрасная атмосфера, уютное место. Приятно провести время с друзьями за чашкой кофе.",
+      "status": "approved",
+      "isAnonymous": false,
+      "createdAt": "2024-10-06T11:00:00"
+    },
+    {
+      "id": "r7",
+      "userId": "u3",
+      "menuItemId": "m2",
+      "text": "Отличная кофейня! Хожу сюда почти каждый день!",
+      "status": "pending",
+      "isAnonymous": false,
+      "createdAt": "2024-10-16T09:00:00"
+    }
+  ]
+}

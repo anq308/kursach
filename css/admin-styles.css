@@ -1,0 +1,440 @@
+.admin-review-card {
+    padding: 24px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+}
+
+.admin-review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.admin-review-author {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.admin-review-email {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-bottom: 4px;
+}
+
+.admin-review-date {
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+.admin-review-content {
+    margin-bottom: 16px;
+}
+
+.admin-review-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--gray-700);
+    margin-bottom: 12px;
+}
+
+.admin-review-ratings {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.admin-rating-item {
+    font-size: 14px;
+    color: var(--gray-600);
+}
+
+.admin-rating-item strong {
+    color: var(--black);
+}
+
+.admin-review-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.btn-success {
+    background: #059669;
+    color: var(--white);
+    border-color: #059669;
+}
+
+.btn-success:hover {
+    background: #047857;
+    border-color: #047857;
+}
+
+.btn-danger {
+    background: #DC2626;
+    color: var(--white);
+    border-color: #DC2626;
+}
+
+.btn-danger:hover {
+    background: #B91C1C;
+    border-color: #B91C1C;
+}
+
+.admin-menu-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+}
+
+.admin-menu-info {
+    flex: 1;
+}
+
+.admin-menu-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.admin-menu-desc {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-bottom: 8px;
+}
+
+.admin-menu-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+.admin-menu-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.admin-user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+}
+
+.admin-user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.admin-user-avatar {
+    width: 56px;
+    height: 56px;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.admin-user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.admin-user-email {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-bottom: 4px;
+}
+
+.admin-user-meta {
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+.user-status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.user-status-badge.active {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.user-status-badge.blocked {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-large {
+    max-width: 600px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.modal-close {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--gray-500);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.modal-close:hover {
+    background: var(--gray-100);
+    color: var(--black);
+}
+
+.modal-body {
+    padding: 24px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 24px;
+    border-top: 1px solid var(--gray-200);
+}
+
+@media (max-width: 768px) {
+    .admin-menu-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .admin-menu-info {
+        width: 100%;
+    }
+
+    .admin-menu-actions {
+        width: 100%;
+    }
+
+    .admin-menu-actions .btn-small {
+        flex: 1;
+    }
+
+    .admin-menu-meta {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .admin-user-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .admin-user-info {
+        width: 100%;
+    }
+
+    .admin-review-card {
+        padding: 20px;
+    }
+
+    .admin-review-header {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .admin-review-actions {
+        width: 100%;
+    }
+
+    .admin-review-actions .btn-small {
+        flex: 1;
+    }
+
+    .admin-review-ratings {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-menu-card {
+        padding: 16px;
+    }
+
+    .admin-menu-name {
+        font-size: 16px;
+    }
+
+    .admin-menu-desc {
+        font-size: 13px;
+    }
+
+    .admin-menu-meta {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .admin-menu-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .admin-menu-actions .btn-small {
+        width: 100%;
+    }
+
+    .admin-user-card {
+        padding: 16px;
+    }
+
+    .admin-user-avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .admin-user-name {
+        font-size: 15px;
+    }
+
+    .admin-user-email {
+        font-size: 13px;
+    }
+
+    .admin-review-card {
+        padding: 16px;
+    }
+
+    .admin-review-author {
+        font-size: 15px;
+    }
+
+    .admin-review-email {
+        font-size: 13px;
+    }
+
+    .admin-review-text {
+        font-size: 14px;
+    }
+
+    .admin-review-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .admin-review-actions .btn-small {
+        width: 100%;
+    }
+
+    .admin-rating-item {
+        font-size: 13px;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-width: none;
+    }
+
+    .modal-header {
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 18px;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-footer {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+}

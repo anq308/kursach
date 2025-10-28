@@ -1,0 +1,9 @@
+docs/
+*.txt
+*.puml
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+test-database.html

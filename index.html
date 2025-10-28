@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeReview — Система отзывов</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">CoffeeReview</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-item active">Главная</a>
+                    <a href="pages/ratings.html" class="nav-item">Рейтинги</a>
+                    <a href="pages/menu.html" class="nav-item">Меню</a>
+                    <a href="pages/auth.html" class="nav-item nav-btn">Войти</a>
+                </div>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Ваш голос<br>формирует качество</h1>
+                        <p class="hero-text">Мы ценим каждое слово наших гостей. Ваши отзывы — это не просто оценки, а возможность создать кофейню мечты вместе. Поделитесь впечатлениями о вкусе, атмосфере и сервисе.</p>
+                        <div class="hero-actions">
+                            <a href="pages/review.html" class="btn btn-primary">Написать отзыв</a>
+                            <a href="pages/ratings.html" class="btn btn-outline">Все отзывы</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/stakan 2.png" alt="Coffee Cup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="avgRating">4.8</div>
+                        <div class="stat-label">Рейтинг</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalReviews">247</div>
+                        <div class="stat-label">Отзывов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="happyClients">94%</div>
+                        <div class="stat-label">Довольных</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="menuItems">38</div>
+                        <div class="stat-label">Позиций</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-preview">
+            <div class="container">
+                <h2 class="section-title">Популярное меню</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Капучино</h3>
+                            <p class="menu-desc">Классический итальянский кофе с нежной молочной пеной</p>
+                        </div>
+                        <div class="menu-price">250₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Флэт Уайт</h3>
+                            <p class="menu-desc">Двойной эспрессо с бархатистым микропенным молоком</p>
+                        </div>
+                        <div class="menu-price">280₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Эспрессо</h3>
+                            <p class="menu-desc">Крепкий итальянский кофе из отборных зёрен</p>
+                        </div>
+                        <div class="menu-price">180₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Раф кофе</h3>
+                            <p class="menu-desc">Кофе со сливками и ванильным сахаром</p>
+                        </div>
+                        <div class="menu-price">320₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Латте</h3>
+                            <p class="menu-desc">Нежный кофе с большим количеством молока</p>
+                        </div>
+                        <div class="menu-price">280₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Американо</h3>
+                            <p class="menu-desc">Эспрессо с горячей водой для мягкого вкуса</p>
+                        </div>
+                        <div class="menu-price">200₽</div>
+                    </div>
+                </div>
+                <div class="menu-footer">
+                    <a href="pages/menu.html" class="btn btn-outline">Полное меню</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section-title">Последние отзывы</h2>
+                <div class="reviews-list">
+                    <article class="review-item">
+                        <div class="review-meta">
+                            <span class="review-author">Анна Соколова</span>
+                            <span class="review-date">15.10.2025</span>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                            </div>
+                            <span class="rating-num">5.0</span>
+                        </div>
+                        <p class="review-content">Открыла для себя это место месяц назад и теперь захожу каждое утро. Кофе всегда свежий, бариста знают своё дело. Капучино с ореховым молоком — просто идеальный. Атмосфера спокойная, можно поработать за ноутбуком.</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-meta">
+                            <span class="review-author">Михаил Воронов</span>
+                            <span class="review-date">14.10.2025</span>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star"></span>
+                            </div>
+                            <span class="rating-num">4.0</span>
+                        </div>
+                        <p class="review-content">Отличное соотношение цены и качества. Эспрессо крепкий, как я люблю. Десерты домашние, особенно рекомендую чизкейк. Единственный минус — мало розеток для зарядки гаджетов, но это мелочи.</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-meta">
+                            <span class="review-author">Елена Кравченко</span>
+                            <span class="review-date">13.10.2025</span>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                            </div>
+                            <span class="rating-num">5.0</span>
+                        </div>
+                        <p class="review-content">Заходила с подругой на завтрак — были приятно удивлены. Круассаны свежайшие, кофе ароматный. Персонал улыбчивый и внимательный. Интерьер минималистичный, без лишнего, всё со вкусом. Обязательно вернёмся.</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-meta">
+                            <span class="review-author">Дмитрий Орлов</span>
+                            <span class="review-date">12.10.2025</span>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                            </div>
+                            <span class="rating-num">5.0</span>
+                        </div>
+                        <p class="review-content">Лучший флэт уайт в городе! Пробовал в разных местах, но здесь баланс молока и эспрессо идеальный. Зёрна явно качественные, чувствуется ореховое послевкусие. Цены адекватные. Рекомендую всем кофеманам.</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-meta">
+                            <span class="review-author">Анонимно</span>
+                            <span class="review-date">11.10.2025</span>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star"></span>
+                            </div>
+                            <span class="rating-num">4.0</span>
+                        </div>
+                        <p class="review-content">Хорошая кофейня для встреч. Тихо, уютно, не слишком людно даже в выходные. Латте понравился, десерты тоже свежие. Иногда долго готовят заказ, но результат того стоит.</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-meta">
+                            <span class="review-author">Ирина Смирнова</span>
+                            <span class="review-date">10.10.2025</span>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                            </div>
+                            <span class="rating-num">5.0</span>
+                        </div>
+                        <p class="review-content">Случайно зашла после дождя и влюбилась в это место! Раф-кофе просто волшебный, а атмосфера располагает остаться подольше. Книжная полка — отдельный плюс. Буду ходить сюда регулярно.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <h2 class="section-title">Мы — это CoffeeReview</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-number">01</div>
+                        <h3 class="about-card-title">Наша философия</h3>
+                        <p class="about-card-text">Кофе — это больше чем напиток. Это ритуал, встреча, момент для себя. Мы создаём пространство, где каждый чувствует себя желанным гостем.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-number">02</div>
+                        <h3 class="about-card-title">Качество зерна</h3>
+                        <p class="about-card-text">Работаем напрямую с фермами из Бразилии, Эфиопии и Колумбии. Каждая партия проходит строгий контроль качества и каппинг перед попаданием в меню.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-number">03</div>
+                        <h3 class="about-card-title">Команда бариста</h3>
+                        <p class="about-card-text">Наши бариста — сертифицированные специалисты с опытом от 3 лет. Регулярные тренинги, участие в чемпионатах и страсть к кофе — наш стандарт.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-number">04</div>
+                        <h3 class="about-card-title">Открыты к диалогу</h3>
+                        <p class="about-card-text">Ваши отзывы — не формальность, а инструмент развития. За год работы внедрили 47 улучшений по предложениям гостей, от новых позиций до изменений в интерьере.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Почему ваш отзыв важен</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3 class="feature-title">Формируете качество</h3>
+                        <p class="feature-text">Каждый отзыв анализируется командой. Мы адаптируем меню, улучшаем сервис и обучаем бариста на основе ваших слов. За последний месяц внедрили 12 улучшений благодаря отзывам гостей.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3 class="feature-title">Помогаете другим</h3>
+                        <p class="feature-text">Ваш опыт ценен для тех, кто выбирает, куда пойти. Детальные описания вкусов, атмосферы и обслуживания помогают людям принять правильное решение и найти своё идеальное место.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3 class="feature-title">Получаете диалог</h3>
+                        <p class="feature-text">Мы отвечаем на каждый отзыв в течение 24 часов. Благодарим за похвалу, решаем проблемы и внедряем предложения. Ваше мнение запускает реальные изменения.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Расскажите о своём<br>визите к нам</h2>
+                    <p class="cta-description">Это займёт 2 минуты, но поможет нам стать лучше</p>
+                    <a href="pages/review.html" class="btn btn-large">Написать отзыв</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">CoffeeReview</h4>
+                    <p class="footer-text">Прозрачная система отзывов, где каждое мнение имеет значение. Помогаем кофейням расти вместе с гостями.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Навигация</h4>
+                    <a href="index.html" class="footer-link">Главная</a>
+                    <a href="pages/ratings.html" class="footer-link">Рейтинги</a>
+                    <a href="pages/menu.html" class="footer-link">Меню</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Аккаунт</h4>
+                    <a href="pages/auth.html" class="footer-link">Войти</a>
+                    <a href="pages/profile.html" class="footer-link">Личный кабинет</a>
+                    <a href="pages/review.html" class="footer-link">Оставить отзыв</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Контакты</h4>
+                    <p class="footer-text">Москва, ул. Кофейная, 12</p>
+                    <p class="footer-text">info@coffeereview.ru</p>
+                    <p class="footer-text">+7 495 123-45-67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CoffeeReview. Курсовой проект Орлова Ярослава, ИСП-0029</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

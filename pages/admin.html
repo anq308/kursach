@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель — CoffeeReview</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin-styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">CoffeeReview Admin</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-item">На сайт</a>
+                    <a href="admin.html" class="nav-item active">Админ панель</a>
+                    <button class="nav-item nav-btn" id="adminLogoutBtn">Выйти</button>
+                </div>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <div class="container">
+                <div class="admin-header">
+                    <h1 class="admin-title">Панель администратора</h1>
+                    <p class="admin-subtitle" id="adminName">Администратор Системы</p>
+                </div>
+
+                <div class="admin-stats-grid">
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-value" id="totalReviewsCount">0</div>
+                        <div class="admin-stat-label">Всего отзывов</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-value" id="pendingCount">0</div>
+                        <div class="admin-stat-label">На модерации</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-value" id="approvedCount">0</div>
+                        <div class="admin-stat-label">Одобрено</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-value" id="rejectedCount">0</div>
+                        <div class="admin-stat-label">Отклонено</div>
+                    </div>
+                </div>
+
+                <div class="admin-content">
+                    <div class="admin-tabs">
+                        <button class="admin-tab active" data-tab="reviews">Модерация отзывов</button>
+                        <button class="admin-tab" data-tab="menu">Управление меню</button>
+                        <button class="admin-tab" data-tab="users">Пользователи</button>
+                    </div>
+
+                    <div class="admin-tab-content" id="reviewsTab">
+                        <div class="admin-controls">
+                            <h2 class="admin-section-title">Отзывы на модерации</h2>
+                            <div class="admin-filter-buttons">
+                                <button class="filter-btn active" data-status="pending">На модерации</button>
+                                <button class="filter-btn" data-status="approved">Одобренные</button>
+                                <button class="filter-btn" data-status="rejected">Отклонённые</button>
+                                <button class="filter-btn" data-status="all">Все</button>
+                            </div>
+                        </div>
+
+                        <div class="admin-reviews-list" id="adminReviewsList"></div>
+                    </div>
+
+                    <div class="admin-tab-content hidden" id="menuTab">
+                        <div class="admin-controls">
+                            <h2 class="admin-section-title">Управление меню</h2>
+                            <button class="btn btn-primary" id="addMenuItemBtn">Добавить позицию</button>
+                        </div>
+
+                        <div class="admin-menu-list" id="adminMenuList"></div>
+                    </div>
+
+                    <div class="admin-tab-content hidden" id="usersTab">
+                        <h2 class="admin-section-title">Пользователи системы</h2>
+                        <div class="admin-users-list" id="adminUsersList"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal hidden" id="replyModal">
+        <div class="modal-overlay" onclick="closeModal('replyModal')"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Ответить на отзыв</h3>
+                <button class="modal-close" onclick="closeModal('replyModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="replyText" class="form-label">Текст ответа</label>
+                    <textarea id="replyText" class="form-textarea" rows="4" placeholder="Напишите ответ..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeModal('replyModal')">Отмена</button>
+                <button class="btn btn-primary" id="submitReplyBtn">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="rejectModal">
+        <div class="modal-overlay" onclick="closeModal('rejectModal')"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Отклонить отзыв</h3>
+                <button class="modal-close" onclick="closeModal('rejectModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="rejectReason" class="form-label">Причина отклонения</label>
+                    <textarea id="rejectReason" class="form-textarea" rows="3" placeholder="Укажите причину..." required></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeModal('rejectModal')">Отмена</button>
+                <button class="btn btn-primary" id="submitRejectBtn">Отклонить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="menuModal">
+        <div class="modal-overlay" onclick="closeModal('menuModal')"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 class="modal-title" id="menuModalTitle">Добавить позицию</h3>
+                <button class="modal-close" onclick="closeModal('menuModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <form id="menuItemForm">
+                    <div class="form-group">
+                        <label for="menuItemName" class="form-label">Название</label>
+                        <input type="text" id="menuItemName" class="form-input" required maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="menuItemDesc" class="form-label">Описание</label>
+                        <textarea id="menuItemDesc" class="form-textarea" rows="3" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="menuItemCategory" class="form-label">Категория</label>
+                        <select id="menuItemCategory" class="form-select" required>
+                            <option value="кофе">Кофе</option>
+                            <option value="чай">Чай</option>
+                            <option value="холодные напитки">Холодные напитки</option>
+                            <option value="десерты">Десерты</option>
+                            <option value="выпечка">Выпечка</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="menuItemPrice" class="form-label">Цена (₽)</label>
+                        <input type="number" id="menuItemPrice" class="form-input" required min="0">
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="menuItemActive" class="checkbox-input" checked>
+                        <label for="menuItemActive" class="checkbox-label">Активно (отображается в меню)</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeModal('menuModal')">Отмена</button>
+                <button class="btn btn-primary" id="saveMenuItemBtn">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

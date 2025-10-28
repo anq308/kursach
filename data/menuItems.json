@@ -1,0 +1,84 @@
+{
+  "menuItems": [
+    {
+      "id": "m1",
+      "name": "Эспрессо",
+      "description": "Классический крепкий кофе",
+      "category": "Кофе",
+      "price": 120,
+      "isActive": true
+    },
+    {
+      "id": "m2",
+      "name": "Американо",
+      "description": "Эспрессо с горячей водой",
+      "category": "Кофе",
+      "price": 150,
+      "isActive": true
+    },
+    {
+      "id": "m3",
+      "name": "Капучино",
+      "description": "Эспрессо с молочной пеной",
+      "category": "Кофе",
+      "price": 180,
+      "isActive": true
+    },
+    {
+      "id": "m4",
+      "name": "Латте",
+      "description": "Кофе с большим количеством молока",
+      "category": "Кофе",
+      "price": 200,
+      "isActive": true
+    },
+    {
+      "id": "m5",
+      "name": "Раф кофе",
+      "description": "Кофе со сливками и ванилью",
+      "category": "Кофе",
+      "price": 220,
+      "isActive": true
+    },
+    {
+      "id": "m6",
+      "name": "Чизкейк Нью-Йорк",
+      "description": "Классический чизкейк",
+      "category": "Десерты",
+      "price": 280,
+      "isActive": true
+    },
+    {
+      "id": "m7",
+      "name": "Тирамису",
+      "description": "Итальянский десерт с кофе",
+      "category": "Десерты",
+      "price": 300,
+      "isActive": true
+    },
+    {
+      "id": "m8",
+      "name": "Брауни",
+      "description": "Шоколадный пирог с орехами",
+      "category": "Десерты",
+      "price": 250,
+      "isActive": true
+    },
+    {
+      "id": "m9",
+      "name": "Круассан",
+      "description": "Французская слоеная выпечка",
+      "category": "Выпечка",
+      "price": 150,
+      "isActive": true
+    },
+    {
+      "id": "m10",
+      "name": "Булочка с корицей",
+      "description": "Сдобная булочка с корицей",
+      "category": "Выпечка",
+      "price": 120,
+      "isActive": true
+    }
+  ]
+}

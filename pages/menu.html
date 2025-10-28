@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню — CoffeeReview</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">CoffeeReview</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-item">Главная</a>
+                    <a href="ratings.html" class="nav-item">Рейтинги</a>
+                    <a href="menu.html" class="nav-item active">Меню</a>
+                    <a href="auth.html" class="nav-item nav-btn">Войти</a>
+                </div>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-hero">
+            <div class="container">
+                <h1 class="menu-hero-title">Наше меню</h1>
+                <p class="menu-hero-text">Каждый напиток приготовлен с любовью и вниманием к деталям</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="menu-filters">
+                    <button class="menu-filter-btn active" data-category="all">Всё меню</button>
+                    <button class="menu-filter-btn" data-category="кофе">Кофе</button>
+                    <button class="menu-filter-btn" data-category="чай">Чай</button>
+                    <button class="menu-filter-btn" data-category="холодные напитки">Холодные напитки</button>
+                    <button class="menu-filter-btn" data-category="десерты">Десерты</button>
+                    <button class="menu-filter-btn" data-category="выпечка">Выпечка</button>
+                </div>
+
+                <div class="menu-items-grid" id="menuItemsGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">CoffeeReview</h4>
+                    <p class="footer-text">Прозрачная система отзывов, где каждое мнение имеет значение. Помогаем кофейням расти вместе с гостями.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Навигация</h4>
+                    <a href="../index.html" class="footer-link">Главная</a>
+                    <a href="ratings.html" class="footer-link">Рейтинги</a>
+                    <a href="menu.html" class="footer-link">Меню</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Аккаунт</h4>
+                    <a href="auth.html" class="footer-link">Войти</a>
+                    <a href="profile.html" class="footer-link">Личный кабинет</a>
+                    <a href="review.html" class="footer-link">Оставить отзыв</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Контакты</h4>
+                    <p class="footer-text">Москва, ул. Кофейная, 12</p>
+                    <p class="footer-text">info@coffeereview.ru</p>
+                    <p class="footer-text">+7 495 123-45-67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CoffeeReview. Курсовой проект Орлова Ярослава, ИСП-0029</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "ratings": [
+    {
+      "id": "ra1",
+      "reviewId": "r1",
+      "quality": 5,
+      "taste": 5,
+      "service": 5,
+      "atmosphere": 4,
+      "valueForMoney": 4,
+      "average": 4.6
+    },
+    {
+      "id": "ra2",
+      "reviewId": "r2",
+      "quality": 5,
+      "taste": 5,
+      "service": 5,
+      "atmosphere": 5,
+      "valueForMoney": 4,
+      "average": 4.8
+    },
+    {
+      "id": "ra3",
+      "reviewId": "r3",
+      "quality": 4,
+      "taste": 4,
+      "service": 5,
+      "atmosphere": 4,
+      "valueForMoney": 4,
+      "average": 4.2
+    },
+    {
+      "id": "ra4",
+      "reviewId": "r4",
+      "quality": 5,
+      "taste": 5,
+      "service": 5,
+      "atmosphere": 5,
+      "valueForMoney": 5,
+      "average": 5.0
+    },
+    {
+      "id": "ra5",
+      "reviewId": "r5",
+      "quality": 5,
+      "taste": 5,
+      "service": 4,
+      "atmosphere": 5,
+      "valueForMoney": 4,
+      "average": 4.6
+    },
+    {
+      "id": "ra6",
+      "reviewId": "r6",
+      "quality": 5,
+      "taste": 4,
+      "service": 5,
+      "atmosphere": 5,
+      "valueForMoney": 4,
+      "average": 4.6
+    },
+    {
+      "id": "ra7",
+      "reviewId": "r7",
+      "quality": 5,
+      "taste": 5,
+      "service": 5,
+      "atmosphere": 4,
+      "valueForMoney": 4,
+      "average": 4.6
+    }
+  ]
+}
