@@ -6,4 +6,5 @@ docs/
 *.doc
 *.pptx
 *.ppt
+*.md
 test-database.html

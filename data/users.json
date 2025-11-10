@@ -9,7 +9,7 @@
       "role": "admin",
       "status": "active",
       "createdAt": "2024-09-01T10:00:00"
-    },
+    },  
     {
       "id": "u2",
       "firstName": "Анна",
@@ -52,3 +52,4 @@
     }
   ]
 }
+

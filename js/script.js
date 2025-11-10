@@ -399,6 +399,15 @@ function initTestData() {
 }
 
 function loadStats() {
+    const avgRatingEl = document.getElementById('avgRating');
+    const totalReviewsEl = document.getElementById('totalReviews');
+    const happyClientsEl = document.getElementById('happyClients');
+    const menuItemsEl = document.getElementById('menuItems');
+    
+    if (!avgRatingEl || !totalReviewsEl || !happyClientsEl || !menuItemsEl) {
+        return;
+    }
+    
     const data = JSON.parse(localStorage.getItem('coffeeReviewData'));
     
     if (data) {
@@ -416,10 +425,10 @@ function loadStats() {
         
         const menuCount = data.menuItems.filter(m => m.isActive).length;
 
-        document.getElementById('avgRating').textContent = avgRating;
-        document.getElementById('totalReviews').textContent = totalReviews + 244;
-        document.getElementById('happyClients').textContent = happyPercent + '%';
-        document.getElementById('menuItems').textContent = menuCount + 33;
+        avgRatingEl.textContent = avgRating;
+        totalReviewsEl.textContent = totalReviews + 244;
+        happyClientsEl.textContent = happyPercent + '%';
+        menuItemsEl.textContent = menuCount + 33;
     }
 }
 
