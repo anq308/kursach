@@ -10,7 +10,7 @@ Disallow: /*.json
 Disallow: /admin.html
 Disallow: /test-database.html
 
-Allow: /login.html
-Allow: /register.html
+Allow: /pages/auth.html
+Allow: /pages/register.html
 
 Sitemap: https://kursach-mu.vercel.app/sitemap.xml
